@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pikaso_texttoimage_inside_of_an_animated_green_tree_house_room"
+    android:orientation="vertical"
+    tools:context=".StartActivity">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="75dp" />
+
+    <ImageView
+        android:id="@+id/imageViewMainStartup"
+        android:layout_width="match_parent"
+        android:layout_height="247dp"
+        app:srcCompat="@drawable/main" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="34dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="97dp"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/feedBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="73dp"
+            android:layout_weight="1"
+            android:backgroundTint="#474646"
+            android:fontFamily="@font/alfa_slab_one"
+            android:text="Feed Me :)"
+            android:textColor="#FFFFFF" />
+
+        <Space
+            android:layout_width="19dp"
+            android:layout_height="20dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/playBtn"
+            android:layout_width="108dp"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:backgroundTint="#474646"
+            android:fontFamily="@font/alfa_slab_one"
+            android:text="Play :)"
+            android:textColor="#FFFFFF" />
+
+        <Space
+            android:layout_width="18dp"
+            android:layout_height="39dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/cleanBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="76dp"
+            android:layout_weight="1"
+            android:backgroundTint="#474646"
+            android:fontFamily="@font/alfa_slab_one"
+            android:text="Clean Me :)"
+            android:textColor="#FFFFFF" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10">
+
+        <ProgressBar
+            android:id="@+id/cleanBar"
+            style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Horizontal"
+            android:layout_width="197dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="192dp"
+            android:layout_marginTop="180dp"
+            android:layout_marginEnd="17dp"
+            android:layout_marginBottom="51dp"
+            android:background="#474646"
+            android:indeterminateDrawable="@drawable/cleaning_rocky"
+            android:indeterminateOnly="false"
+            android:max="100"
+            android:min="0"
+            android:progress="0"
+            android:progressBackgroundTint="#000000"
+            android:progressTint="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/hungerStatus"
+            android:layout_width="157dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="249dp"
+            android:layout_marginTop="97dp"
+            android:layout_marginEnd="17dp"
+            android:layout_marginBottom="163dp"
+            android:inputType="text"
+            android:text="&quot;0%&quot;"
+            android:textColor="#F4F4F4"
+            android:textColorHint="#FFFFFF"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ProgressBar
+            android:id="@+id/hungerBar"
+            style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Horizontal"
+            android:layout_width="201dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="192dp"
+            android:layout_marginTop="46dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="182dp"
+            android:background="#474646"
+            android:foregroundTint="#000000"
+            android:indeterminate="false"
+            android:indeterminateOnly="false"
+            android:indeterminateTint="#FFFFFF"
+            android:keepScreenOn="false"
+            android:max="100"
+            android:min="0"
+            android:progress="0"
+            android:progressBackgroundTint="#000000"
+            android:progressTint="#FFFFFF"
+            android:secondaryProgressTint="#FFFFFF"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/healthStatus"
+            android:layout_width="144dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="242dp"
+            android:layout_marginTop="162dp"
+            android:layout_marginEnd="17dp"
+            android:layout_marginBottom="100dp"
+            android:text="&quot;0%&quot;"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ProgressBar
+            android:id="@+id/happyBar"
+            style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Horizontal"
+            android:layout_width="196dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="190dp"
+            android:layout_marginTop="115dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="115dp"
+            android:background="#474646"
+            android:indeterminateDrawable="@drawable/happy_rocky"
+            android:indeterminateOnly="false"
+            android:max="100"
+            android:min="0"
+            android:progress="0"
+            android:progressBackgroundTint="#000000"
+            android:progressTint="#FFFFFF"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/cleanlinessStatus"
+            android:layout_width="144dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="242dp"
+            android:layout_marginTop="228dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="30dp"
+            android:text="&quot;0%&quot;"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="139dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="51dp"
+            android:layout_marginEnd="229dp"
+            android:layout_marginBottom="184dp"
+            android:fontFamily="@font/alfa_slab_one"
+            android:labelFor="@id/hungerBar"
+            android:text="Hunger Bar:"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="136dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="121dp"
+            android:layout_marginEnd="232dp"
+            android:layout_marginBottom="120dp"
+            android:fontFamily="@font/alfa_slab_one"
+            android:labelFor="@id/happyBar"
+            android:text="Happy Bar:"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="184dp"
+            android:layout_marginEnd="238dp"
+            android:layout_marginBottom="55dp"
+            android:fontFamily="@font/alfa_slab_one"
+            android:labelFor="@id/cleanBar"
+            android:text="Clean Bar:"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/resetBtn"
+            android:layout_width="142dp"
+            android:layout_height="51dp"
+            android:layout_marginStart="134dp"
+            android:layout_marginEnd="135dp"
+            android:layout_marginBottom="227dp"
+            android:backgroundTint="#474646"
+            android:fontFamily="@font/alfa_slab_one"
+            android:text="Reset:"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
