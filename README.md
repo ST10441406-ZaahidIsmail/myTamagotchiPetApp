@@ -20,3 +20,6 @@ Below is images of the application in Use:
 ![Screenshot 2024-05-06 123534](https://github.com/ST10441406-ZaahidIsmail/myTamagotchiPetApp/assets/164514640/f27fea7a-a498-4cb3-a1bc-473604917b38)
 ![Screenshot 2024-05-06 123459](https://github.com/ST10441406-ZaahidIsmail/myTamagotchiPetApp/assets/164514640/7ea4ed9c-0940-4e79-a3e9-834120ee423a)
 
+Below is a YouTube Link for a demonstration of the application and a better understanding of the logic and purpose of the App.
+https://www.youtube.com/watch?v=0bJKZluzHZg
+
