@@ -220,7 +220,7 @@
             android:layout_marginBottom="184dp"
             android:fontFamily="@font/alfa_slab_one"
             android:labelFor="@id/hungerBar"
-            android:text="Hunger Bar:"
+            android:text="Feed Bar:"
             android:textColor="#FFFFFF"
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
